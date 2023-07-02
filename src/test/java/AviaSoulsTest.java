@@ -59,4 +59,10 @@ public class AviaSoulsTest {
 
         Assertions.assertArrayEquals(expectedTickets, actualTickets);
     }
+    @Test
+    public void testFindAllEmpty() {
+        Ticket[] expected = new Ticket[0];
+        Ticket[] actual = aviaSouls.findAll();
+        Assertions.assertArrayEquals(expected, actual);
+    }
 }

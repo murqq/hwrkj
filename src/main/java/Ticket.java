@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Ticket implements Comparable<Ticket>{
+public class Ticket implements Comparable<Ticket> {
     private String from; // аэропорт откуда
     private String to; // аэропорт куда
     private int price; // цена
@@ -34,6 +34,7 @@ public class Ticket implements Comparable<Ticket>{
     public int getTimeTo() {
         return timeTo;
     }
+
     @Override
     public int compareTo(Ticket other) {
         if (this.price < other.price) {
@@ -44,6 +45,7 @@ public class Ticket implements Comparable<Ticket>{
             return 0;
         }
     }
+
     // Вспомогательные методы для корректной работы equals
     @Override
     public boolean equals(Object o) {
